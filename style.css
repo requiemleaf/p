@@ -94,6 +94,29 @@
   width: 100%;
   height: auto;
   display: block;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.project-img.reveal {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.projectbody-link {
+  /*text-decoration: none;*/
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.projectbody-link:hover {
+  color: #999;
+}
+
+.custom-bullets {
+  font-size: 14px;
+  line-height: 1.5;
 }
 
 /* pending */
