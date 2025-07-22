@@ -16,168 +16,30 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
       rel="stylesheet"
     />
-
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        background-color: white;
-        color: #001323;
-      }
-
-      header {
-        border-bottom: 1px solid #ccc;
-        padding: 20px 40px;
-      }
-
-      .navbar-nav {
-        margin-left: auto;
-      }
-
-      .navbar-nav a {
-        margin-left: 20px;
-        text-decoration: none;
-        color: #001323;
-        font-weight: 700;
-        font-size: 14px;
-        transition: color 0.3s ease;
-      }
-
-      .navbar-nav a:hover {
-        color: #999;
-      }
-
-      .icon-placeholder {
-        width: 40px;
-        height: 40px;
-        background-color: #ccc;
-        border-radius: 4px;
-      }
-
-      .intro {
-        padding: 60px 40px 20px;
-      }
-
-      .intro span {
-        font-size: 14px;
-        font-weight: 700;
-      }
-
-      .intro h1 {
-        font-size: 56px;
-        font-weight: 900;
-        margin: 10px 0;
-      }
-
-      .intro p {
-        font-size: 14px;
-        font-weight: 400;
-        margin: 0;
-      }
-
-      .menu {
-        margin: 40px;
-      }
-
-      .menu-item {
-        font-family: "Oswald", sans-serif;
-        font-size: 60px;
-        font-weight: 700;
-        margin: 16px 0;
-        text-decoration: underline;
-        display: inline-block;
-        transition: transform 0.3s ease, color 0.3s ease;
-        color: rgba(3, 26, 43, 1);
-      }
-
-      .menu-item:hover {
-        transform: translateX(30px);
-        color: rgba(78, 77, 79, 1);
-      }
-
-      .projects {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 40px;
-        padding: 0 40px 60px;
-      }
-
-      .project {
-        width: calc(50% - 40px);
-        box-sizing: border-box;
-        position: relative;
-        overflow: hidden;
-        transition: transform 0.3s ease;
-      }
-
-      .project img {
-        width: 100%;
-        display: block;
-        background-image: repeating-conic-gradient(#ccc 0% 25%, #fff 0% 50%);
-        background-size: 20px 20px;
-        aspect-ratio: 1688 / 1035;
-        height: auto;
-        opacity: 1;
-
-        transition: transform 0.4s ease, opacity 0.4s ease;
-        will-change: transform, opacity;
-      }
-
-      .project h3 {
-        margin: 10px 0 5px;
-        font-size: 20px;
-        font-weight: 400;
-      }
-
-      .project p {
-        margin: 0;
-        font-size: 14px;
-        font-weight: 400;
-      }
-
-      .project:hover img {
-        transform: scale(1.03);
-        opacity: 0.9;
-      }
-
-      .project[data-animate] {
-        opacity: 0;
-        transform: translateY(40px);
-        transition: all 0.6s ease-out;
-      }
-
-      .project[data-animate].in-view {
-        opacity: 1;
-        transform: none;
-      }
-
-      footer {
-        padding: 40px;
-        background-color: #f9f9f9;
-        text-align: center;
-        font-size: 14px;
-        border-top: 1px solid #ccc;
-      }
-
-      .social-links a {
-        margin: 0 10px;
-        color: #001323;
-        text-decoration: none;
-        font-weight: bold;
-        transition: color 0.3s ease;
-      }
-
-      .social-links a:hover {
-        color: #999;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
+    <!-- Header -->
     <header>
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <div class="collapse navbar-collapse">
-            <ul class="navbar-nav ms-auto">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav d-flex align-items-center">
               <li class="nav-item">
                 <a class="nav-link" href="https://google.com" target="_blank"
                   >PROJECTS</a
@@ -198,10 +60,15 @@
                   >RESUME</a
                 >
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://github.com/"
-                  ><div class="icon-placeholder"></div
-                ></a>
+              <li class="nav-item d-flex align-items-center">
+                <a class="nav-link p-0" href="index.html">
+                  <img
+                    src="/assets/logo.svg"
+                    alt="Logo"
+                    width="60"
+                    height="60"
+                  />
+                </a>
               </li>
             </ul>
           </div>
@@ -209,195 +76,187 @@
       </nav>
     </header>
 
-    <div class="intro">
-      <span>👋 HI, I'M</span>
-      <h1>WAYNE</h1>
-      <p>A UX/ Product Designer With Interdisciplinary Background</p>
-    </div>
+    <!-- Main Content -->
+    <main>
+      <div class="container">
+        <!-- Intro Section -->
+        <div class="intro">
+          <span>👋 HI, I'M</span>
+          <h1>WAYNE</h1>
+          <p>A UX/ Product Designer With Interdisciplinary Background</p>
+        </div>
 
-    <div class="menu">
-      <a class="menu-item" href="https://google.com" target="_blank"
-        >WHAT DO I DO?</a
-      ><br />
-      <a class="menu-item" href="https://google.com" target="_blank"
-        >WANNA SEE SOME GOODS?</a
-      ><br />
-      <a class="menu-item" href="https://google.com" target="_blank"
-        >WANNA LEARN MORE ABOUT ME?</a
-      ><br />
-      <a class="menu-item" href="https://google.com" target="_blank"
-        >LET’S TALK.</a
-      >
-    </div>
+        <!-- Menu -->
+        <div class="menu my-5">
+          <a class="menu-item d-block" href="https://google.com" target="_blank"
+            >WHAT DO I DO?</a
+          >
+          <a class="menu-item d-block" href="https://google.com" target="_blank"
+            >WANNA SEE SOME GOODS?</a
+          >
+          <a class="menu-item d-block" href="https://google.com" target="_blank"
+            >WANNA LEARN MORE ABOUT ME?</a
+          >
+          <a class="menu-item d-block" href="https://google.com" target="_blank"
+            >LET’S TALK.</a
+          >
+          <br />
+          <br />
+        </div>
 
-    <div class="projects">
-      <div class="project">
-        <a href="Mosaic.html"
-          ><img src="./assets/Home/Cover_Short-Emails.png" alt="Placeholder"
-        /></a>
-        <h3>
-          <a href="Mosaic.html" style="text-decoration: none; color: inherit"
-            >BJ's Member Communication Optimization</a
-          >
-        </h3>
-        <p>
-          <a href="Mosaic.html" style="text-decoration: none; color: inherit"
-            >Improving clarity and effectiveness of user communications.</a
-          >
-        </p>
-      </div>
-      <div class="project">
-        <a href="Mosaic.html"
-          ><img src="https://via.placeholder.com/800x600" alt="Placeholder"
-        /></a>
-        <h3>
-          <a href="Mosaic.html" style="text-decoration: none; color: inherit"
-            >Mosaic</a
-          >
-        </h3>
-        <p>
-          <a href="Mosaic.html" style="text-decoration: none; color: inherit"
-            >Project management platform for team collaboration.</a
-          >
-        </p>
-      </div>
-      <div class="project">
-        <a href="Mosaic.html"
-          ><img src="https://via.placeholder.com/800x600" alt="Placeholder"
-        /></a>
-        <h3>
-          <a href="Mosaic.html" style="text-decoration: none; color: inherit"
-            >Post Order Item Addition</a
-          >
-        </h3>
-        <p>
-          <a href="Mosaic.html" style="text-decoration: none; color: inherit"
-            >New feature to help users add unfulfilled items to an order.</a
-          >
-        </p>
-      </div>
-      <div class="project">
-        <a href="Mosaic.html"
-          ><img src="https://via.placeholder.com/800x600" alt="Placeholder"
-        /></a>
-        <h3>
-          <a href="Mosaic.html" style="text-decoration: none; color: inherit"
-            >Green To-Go</a
-          >
-        </h3>
-        <p>
-          <a href="Mosaic.html" style="text-decoration: none; color: inherit"
-            >Reusable cup program for sustainable consumption.</a
-          >
-        </p>
-      </div>
-      <div class="project">
-        <a href="Mosaic.html"
-          ><img src="https://via.placeholder.com/800x600" alt="Placeholder"
-        /></a>
-        <h3>
-          <a href="Mosaic.html" style="text-decoration: none; color: inherit"
-            >Cubitac</a
-          >
-        </h3>
-        <p>
-          <a href="Mosaic.html" style="text-decoration: none; color: inherit"
-            >Online cabinetry order platform for dealers.</a
-          >
-        </p>
-      </div>
-      <div class="project">
-        <a href="Mosaic.html"
-          ><img src="https://via.placeholder.com/800x600" alt="Placeholder"
-        /></a>
-        <h3>
-          <a href="Mosaic.html" style="text-decoration: none; color: inherit"
-            >Janus</a
-          >
-        </h3>
-        <p>
-          <a href="Mosaic.html" style="text-decoration: none; color: inherit"
-            >NYU data entry and storage interface for hiring.</a
-          >
-        </p>
-      </div>
-      <div class="project">
-        <a href="Mosaic.html"
-          ><img src="https://via.placeholder.com/800x600" alt="Placeholder"
-        /></a>
-        <h3>
-          <a href="Mosaic.html" style="text-decoration: none; color: inherit"
-            >NYUWorklink</a
-          >
-        </h3>
-        <p>
-          <a href="Mosaic.html" style="text-decoration: none; color: inherit"
-            >Platform for NYU members to submit work requests.</a
-          >
-        </p>
-      </div>
-      <div class="project">
-        <a href="Mosaic.html"
-          ><img src="https://via.placeholder.com/800x600" alt="Placeholder"
-        /></a>
-        <h3>
-          <a href="Mosaic.html" style="text-decoration: none; color: inherit"
-            >Embike</a
-          >
-        </h3>
-        <p>
-          <a href="Mosaic.html" style="text-decoration: none; color: inherit"
-            >Damage-prevention smart bicycle sharing system.</a
-          >
-        </p>
-      </div>
-      <div class="project">
-        <a href="Mosaic.html"
-          ><img src="https://via.placeholder.com/800x600" alt="Placeholder"
-        /></a>
-        <h3>
-          <a href="Mosaic.html" style="text-decoration: none; color: inherit"
-            >City Periscope</a
-          >
-        </h3>
-        <p>
-          <a href="Mosaic.html" style="text-decoration: none; color: inherit"
-            >Solution to visualize blocked urban views.</a
-          >
-        </p>
-      </div>
-      <div class="project">
-        <a href="Mosaic.html"
-          ><img src="https://via.placeholder.com/800x600" alt="Placeholder"
-        /></a>
-        <h3>
-          <a href="Mosaic.html" style="text-decoration: none; color: inherit"
-            >Access For All</a
-          >
-        </h3>
-        <p>
-          <a href="Mosaic.html" style="text-decoration: none; color: inherit"
-            >AR platform to help architects meet ADA standards.</a
-          >
-        </p>
-      </div>
-    </div>
+        <!-- Projects -->
+        <div class="projects">
+          <div class="project">
+            <a href="communication.html"
+              ><img src="./assets/Home/cover_bjs_communiation.png" alt="BJ's"
+            /></a>
+            <h3>
+              <a href="communication.html"
+                >BJ's Member Communication Optimization</a
+              >
+            </h3>
+            <p>
+              <a href="communication.html"
+                >A project focuses on improving the effectiveness, clarity, and
+                overall user experience of BJ’s member communications.</a
+              >
+            </p>
+          </div>
 
-    <footer class="text-center py-4 border-top">
-      <div class="social-links">
-        <a href="#" aria-label="LinkedIn" style="font-size: 18px"
-          ><i class="bi bi-linkedin"></i
-        ></a>
-        <a href="#" aria-label="Instagram" style="font-size: 18px"
-          ><i class="bi bi-instagram"></i
-        ></a>
-        <a href="#" aria-label="Email" style="font-size: 18px"
-          ><i class="bi bi-envelope"></i
-        ></a>
+          <div class="project">
+            <a href="mosaic.html"
+              ><img src="/assets/Home/cover_mosaic.png" alt="Mosaic"
+            /></a>
+            <h3><a href="mosaic.html">Mosaic</a></h3>
+            <p>
+              <a href="mosaic.html"
+                >A project management software on which the firms and business
+                can manage ever-growing number of projects and team members
+                efficiently.</a
+              >
+            </p>
+          </div>
+
+          <div class="project">
+            <a href="postorder.html"
+              ><img src="/assets/Home/cover_bjs_postorder.png" alt="Post Order"
+            /></a>
+            <h3><a href="postorder.html">Post Order Item Addition</a></h3>
+            <p>
+              <a href="postorder.html"
+                >A new feature of giving the BJ’s member the ability to add
+                items the previous order that has not been fulfilled.</a
+              >
+            </p>
+          </div>
+
+          <div class="project">
+            <a href="greentogo.html"
+              ><img src="/assets/Home/cover_green_togo.gif" alt="Green To-Go"
+            /></a>
+            <h3><a href="greentogo.html">Green To-Go</a></h3>
+            <p>
+              <a href="greentogo.html"
+                >A reusable cup service that tackles the problem of
+                inconvenience associated with using and carrying around reusable
+                cups.</a
+              >
+            </p>
+          </div>
+
+          <div class="project">
+            <a href="cubitac.html"
+              ><img src="/assets/Home/cover_cubitac.png" alt="Cubitac"
+            /></a>
+            <h3><a href="cubitac.html">Cubitac</a></h3>
+            <p>
+              <a href="cubitac.html"
+                >Online cabinetry order platform for dealers.</a
+              >
+            </p>
+          </div>
+
+          <div class="project">
+            <a href="janus.html"
+              ><img src="/assets/Home/cover_janus.jpg" alt="Janus"
+            /></a>
+            <h3><a href="janus.html">Janus</a></h3>
+            <p>
+              <a href="janus.html"
+                >NYU data entry and storage interface for hiring.</a
+              >
+            </p>
+          </div>
+
+          <div class="project">
+            <a href="worklink.html"
+              ><img src="/assets/Home/cover_worklink.jpg" alt="Worklink"
+            /></a>
+            <h3><a href="worklink.html">NYUWorklink</a></h3>
+            <p>
+              <a href="worklink.html"
+                >Platform for NYU members to submit work requests.</a
+              >
+            </p>
+          </div>
+
+          <div class="project">
+            <a href="embike.html"
+              ><img src="/assets/Home/cover_embike.gif" alt="Embike"
+            /></a>
+            <h3><a href="embike.html">Embike</a></h3>
+            <p>
+              <a href="embike.html"
+                >Damage-prevention smart bicycle sharing system.</a
+              >
+            </p>
+          </div>
+
+          <div class="project">
+            <a href="city.html"
+              ><img
+                src="/assets/Home/cover_city_periscope.gif"
+                alt="City Periscope"
+            /></a>
+            <h3><a href="city.html">City Periscope</a></h3>
+            <p>
+              <a href="city.html">Solution to visualize blocked urban views.</a>
+            </p>
+          </div>
+
+          <div class="project">
+            <a href="vr.html"
+              ><img src="/assets/Home/cover_vr.jpg" alt="Access for All"
+            /></a>
+            <h3><a href="vr.html">Access For All</a></h3>
+            <p>
+              <a href="vr.html"
+                >AR platform to help architects meet ADA standards.</a
+              >
+            </p>
+          </div>
+        </div>
       </div>
-      <p class="mt-3 small" style="color: #7a7a7a">
-        © 2025 Designed & Coded by Zhenwen(Wayne) Zhang
-      </p>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 border-top mt-5">
+      <div class="container">
+        <div class="social-links">
+          <a href="#" aria-label="LinkedIn" style="font-size: 18px"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+          <a href="#" aria-label="Instagram" style="font-size: 18px"
+            ><i class="bi bi-instagram"></i
+          ></a>
+          <a href="#" aria-label="Email" style="font-size: 18px"
+            ><i class="bi bi-envelope"></i
+          ></a>
+        </div>
+        <p class="mt-3 small text-muted">
+          © 2025 Designed & Coded by Zhenwen(Wayne) Zhang
+        </p>
+      </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
