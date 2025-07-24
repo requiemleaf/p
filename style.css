@@ -315,3 +315,18 @@ footer {
 .social-links a:hover {
   color: #999;
 }
+
+.resume-btn {
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.resume-btn:hover {
+  background-color: #999;
+  color: white;
+  text-decoration: none;
+}
