@@ -141,24 +141,24 @@
 
 .intro {
   padding: 60px 40px 20px;
-  line-height: 0.6;
+  line-height: 1;
 }
 
 .intro span {
   font-family: "Oswald", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
 }
 
 .intro h1 {
   font-family: "Oswald", sans-serif;
-  font-size: 56px;
+  font-size: 72px;
   font-weight: 1000;
-  margin: 10px 0;
+  margin: 0;
 }
 
 .intro p {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   margin: 0;
 }
@@ -230,7 +230,8 @@
 .project p {
   margin: 0;
   font-size: 14px;
-  font-weight: 200;
+  font-weight: 400;
+  color: #777777;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif,
     "Sans Serif Bold", Icons;
