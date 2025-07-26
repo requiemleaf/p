@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Janus</title>
+    <title>Worklink</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -86,7 +86,11 @@
     <!-- Hero Section -->
     <section class="hero-banner">
       <div class="container">
-        <img src="/assets/Janus/cover_long.jpg" class="hero-img" alt="Janus" />
+        <img
+          src="/assets/Worklink/cover_long.jpg"
+          class="hero-img"
+          alt="Worklink"
+        />
       </div>
     </section>
 
@@ -100,7 +104,7 @@
           </div>
           <div class="col-md">
             <div class="meta-label">DATE</div>
-            <div class="meta-value">May 2019 - May 2020</div>
+            <div class="meta-value">June 2019 - Now</div>
           </div>
           <div class="col-md">
             <div class="meta-label">METHODs</div>
@@ -116,7 +120,8 @@
           <div class="col-md">
             <div class="meta-label">GROUP MEMBERS</div>
             <div class="meta-value">
-              Nichole Latimer<br />Maxine Kho<br />Grant Ng
+              Nichole Latimer<br />Krizia Fernando<br />Tina Chen<br />Steven
+              Medina
             </div>
           </div>
         </div>
@@ -131,29 +136,65 @@
         </div>
         <div class="col-md-9">
           <div class="project-body">
-            <p class="icon-bullet">
-              <img
-                src="/assets/Janus/janus_logo.png"
-                class="project-img"
-                alt="Janus"
-                style="width: 15%; display: block; margin-left: 0"
-              />
-            </p>
-            <p class="icon-bullet">| What's Janus?</p>
+            <p class="icon-bullet">| Clickable Prototype</p>
+            <div
+              style="
+                position: relative;
+                padding-bottom: 56.25%;
+                height: 0;
+                overflow: hidden;
+                max-width: 100%;
+                margin: 0;
+              "
+            >
+              <iframe
+                src="https://www.figma.com/embed?embed_host=share&amp;url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fu1VoD7Os1shBy8dPDTAtKY%2Fworkl%3Fnode-id%3D1%253A15447%26viewport%3D2069%252C559%252C0.07392982393503189%26scaling%3Dscale-down"
+                style="
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 600px;
+                "
+                frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                title="Clickable Prototype"
+              ></iframe>
+            </div>
+            <br />
+            <p class="icon-bullet">| What's NYUWorklink?</p>
             <p>
-              Janus is a front-end data entry and storage application interfaced
-              with university systems to optimize the hiring process for the NYU
-              SRP(Summer Research Program)
+              <b>NYUWorkLink</b> is a software system​(<b>over 50,000 users</b>)
+              that will allow members of the NYU community to submit work
+              requests for which work is performed by Operations workgroups such
+              as HVAC, Plumbing, Facilities, and Public Safety.
             </p>
-            <p class="icon-bullet">| What's my role?</p>
-            <p>
-              As one of the design team developing three parts (Admin, Faculty,
-              and Students) of this enterprise software, I am the design lead of
-              the Admin and Faculty. I have designed low fidelity to high
-              fidelity mockups and conducted user testing for the same. I have
-              also led design presentations in internal team and client
-              meetings.
-            </p>
+            <img
+              src="/assets/Worklink/overview.png"
+              class="project-img"
+              alt="Project Overview"
+            />
+            <br />
+            <p class="icon-bullet">| Three faces of the NYUWorkLink:</p>
+            <ul class="custom-bullets">
+              <li>
+                <b>WorkLink Client:</b> a web app for clients to submit and
+                track work requests;
+              </li>
+              <li>
+                <b>WorkLink Admin:</b> a web app for administrators to track
+                work requests, approvals, invoicing, and other tasks;
+              </li>
+              <li>
+                <b>WorkLink Shop:</b> an iPad app for field personnel to assign
+                and complete work orders.
+              </li>
+            </ul>
+            <i style="font-size: 14px"
+              >*The system is currently in the design phase and will be rolled
+              out with both web and mobile interfaces.</i
+            >
             <br />
             <br />
             <br />
@@ -166,22 +207,12 @@
         </div>
         <div class="col-md-9">
           <div class="project-body">
-            <img
-              src="/assets/Janus/problem_statement.png"
-              class="project-img"
-              alt="Problem Statement"
-            />
-            <p>
-              In the current process, administrators manually transfer and
-              duplicate data across a range of applications. They spend five
-              months organizing information, and onboarding student hires for a
-              10-week research program. Also, due to the disjointed process,
-              students easily miss SRP application deadlines.
-            </p>
             <p class="icon-bullet">| How Might We ...?</p>
             <p>
-              <b>How might we</b> optimize the hiring process for the research
-              program?
+              <b>How might we</b> redesign the WorkLink Client section to make
+              the user flow more reasonable, the interface more concise and
+              beautiful, and make the design conform to the latest material
+              design standards?
             </p>
             <br />
             <br />
@@ -196,9 +227,10 @@
         <div class="col-md-9">
           <div class="project-body">
             <img
-              src="/assets/Janus/design_process.png"
+              src="/assets/Worklink/process.png"
               class="project-img"
               alt="Design Process"
+              style="width: 90%; display: block; margin: 0 auto"
             />
             <br />
             <br />
@@ -206,74 +238,14 @@
           </div>
         </div>
 
-        <!-- Workflow Research -->
-        <div class="col-md-3">
-          <h2 class="section-title">Workflow Research</h2>
-        </div>
-        <div class="col-md-9">
-          <div class="project-body">
-            <p>
-              In order to better understand users, we set several meetings with
-              <b> SRP Administrators, Client, and NYU students</b>. After the
-              sessions, we tried to Identify Features and Functionality and
-              synthesize the current workflow.
-            </p>
-            <img
-              src="/assets/Janus/workflow_research.png"
-              class="project-img"
-              alt="Workflow Research"
-            />
-            <br />
-            <br />
-            <br />
-          </div>
-        </div>
-
-        <!-- Identifying The Users -->
-        <div class="col-md-3">
-          <h2 class="section-title">Identifying The Users</h2>
-        </div>
-        <div class="col-md-9">
-          <div class="project-body">
-            <p class="icon-bullet">Primary Audience</p>
-            <img
-              src="/assets/Janus/who.png"
-              class="project-img"
-              alt="Primary Audience"
-            />
-            <br />
-            <p class="icon-bullet">Systems-level Expectations</p>
-            <img
-              src="/assets/Janus/expectations.png"
-              class="project-img"
-              alt="Systems-level Expectations"
-            />
-            <br />
-            <br />
-            <br />
-          </div>
-        </div>
-
-        <!-- Faculty Use Cases -->
-        <div class="col-md-3">
-          <h2 class="section-title">Faculty Use Cases</h2>
-        </div>
-        <div class="col-md-9">
-          <div class="project-body">
-            <p>
-              To better understand the user and optimize the entire system flow,
-              I decided to start with Faculty Mentor, who wants to experience
-              the new system most. I simulated six possible cases and created
-              the diagram below.
-            </p>
-          </div>
-        </div>
+        <!-- Old Version Analysis -->
         <div class="col-md-12">
+          <h2 class="section-title">Old Version Analysis</h2>
           <div class="project-body">
             <img
-              src="/assets/Janus/usecase.png"
+              src="/assets/Worklink/research.png"
               class="project-img"
-              alt="Faculty Use Cases"
+              alt="Old Version Analysis"
             />
             <br />
             <br />
@@ -281,65 +253,61 @@
           </div>
         </div>
 
-        <!-- Key Feature -->
-        <div class="col-md-3">
-          <h2 class="section-title">Key Feature</h2>
-        </div>
-        <div class="col-md-9">
+        <!-- Function Map -->
+        <div class="col-md-12">
+          <h2 class="section-title">Function Map</h2>
           <div class="project-body">
-            <p class="icon-bullet">| Post a Project</p>
-            <video
-              autoplay
-              muted
-              loop
-              playsinline
-              style="width: 100%; height: auto"
-            >
-              <source
-                src="/assets/Janus/prototype1.mov"
-                type="video/mp4"
-                alt="Prototype1"
-              />
-            </video>
-            <br /><br /><br />
-            <p class="icon-bullet">| Rank Applicants to Hire</p>
-            <p>
-              Task-driven navigation guides users in completing their tasks.
-            </p>
-            <video
-              autoplay
-              muted
-              loop
-              playsinline
-              style="width: 100%; height: auto"
-            >
-              <source
-                src="/assets/Janus/prototype2.mov"
-                type="video/mp4"
-                alt="Prototype2"
-              />
-            </video>
-            <br /><br /><br />
-            <p class="icon-bullet">| Real-time Status Indicators</p>
-            <p>
-              Real-time status indicators frame moving parts within the overall
-              process, giving the faculty a sense of control over a complex,
-              response-driven workflow. It dramatically boosts users’ confidence
-              in the program.
-            </p>
-            <video
-              autoplay
-              muted
-              loop
-              playsinline
-              style="width: 100%; height: auto"
-            >
-              <source
-                src="/assets/Janus/prototype3.mov"
-                type="video/mp4"
-                alt="Prototype3"
-              />
-            </video>
+            <img
+              src="/assets/Worklink/function_map.png"
+              class="project-img"
+              alt="Function Map"
+            />
+            <br />
+            <br />
+            <br />
+          </div>
+        </div>
+
+        <!-- Journey Map -->
+        <div class="col-md-12">
+          <h2 class="section-title">Journey Map</h2>
+          <div class="project-body">
+            <img
+              src="/assets/Worklink/journey_map.png"
+              class="project-img"
+              alt="Journey Map"
+            />
+            <br />
+            <br />
+            <br />
+          </div>
+        </div>
+
+        <!-- Main Features Redesign -->
+        <div class="col-md-12">
+          <h2 class="section-title">Main Features Redesign</h2>
+          <div class="project-body">
+            <p class="icon-bullet">| #1 Redesign the Dashboard</p>
+            <img
+              src="/assets/Worklink/hifi_prototype1.png"
+              class="project-img"
+              alt="Redesign the Dashboard"
+            />
+            <br /><br />
+            <p class="icon-bullet">| #2 Design the Follow-up Questions</p>
+            <img
+              src="/assets/Worklink/hifi_prototype2.png"
+              class="project-img"
+              alt="Design the Follow-up Questions"
+            />
+            <br /><br />
+            <p class="icon-bullet">| #3 Redesign the Work Category Page</p>
+            <img
+              src="/assets/Worklink/hifi_prototype3.png"
+              class="project-img"
+              alt="Redesign the Work Category Page"
+            />
+
             <br />
             <br />
             <br />
