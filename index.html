@@ -22,9 +22,22 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+
+    <!-- access -->
+    <script>
+      const password = "0102";
+
+      function checkPassword() {
+        const input = prompt("Enter the password:");
+        if (input !== password) {
+          alert("Incorrect password.");
+          window.location.href = "https://google.com"; // redirect if wrong
+        }
+      }
+    </script>
   </head>
 
-  <body>
+  <body onload="checkPassword()">
     <!-- Header -->
     <header>
       <nav class="navbar navbar-expand-lg navbar-light">
